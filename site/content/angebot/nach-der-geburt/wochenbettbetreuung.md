@@ -6,7 +6,6 @@ costs: Die Wochenbettbesuche durch die Hebamme werden von der Krankenkasse über
   nach Kaiserschnitt, Zwillingen, krankem Kind oder Komplikationen sind es 16 Besuche.
   Ein Hausbesuch dauert circa eine Stunde.
 location: ''
-on_call_toggle: true
 on_call_costs: 'Die Geburt wird zwischen der 37. und 42. Schwangerschaftswoche erwartet.
   In dieser Zeit leisten wir einen Bereitschaftsdienst, damit wir euch nach Spital-
   und Geburtshausaustritt betreuen können. Für diese Pikettzeit verrechnen wir freipraktizierenden

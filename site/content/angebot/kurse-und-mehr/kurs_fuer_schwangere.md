@@ -3,7 +3,6 @@ title: Yoga in der Schwangerschaft
 weight: 1
 costs: ''
 location: Schulgasse 3, 8400 Winterthur
-on_call_toggle: false
 on_call_costs: ''
 language: ''
 titlecolor: "#5C8288"
