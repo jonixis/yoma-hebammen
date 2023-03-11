@@ -1,0 +1,21 @@
+backend:
+  name: git-gateway
+  branch: decapcms
+media_folder: static/upload
+public_folder: /upload
+collections:
+  - label: "Impressun"
+    name: "impressum"
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "site/content/about.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - label: Team
+            name: team
+            widget: list
+            fields:
+              - {name: image, label: Bild, widget: image}
+              - {name: quote, label: Zitat, widget: string}
