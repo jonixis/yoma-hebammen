@@ -37,6 +37,7 @@ collections:
         name: "datenschutz"
         file: "site/content/datenschutz/_index.md"
         fields:
+          - {label: Titel, name: title, widget: string}
           - {label: Content, name: body, widget: markdown}
   - label: Teammitglieder
     label_singular: Teammitglied
