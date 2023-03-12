@@ -19,12 +19,12 @@ collections:
     preview_path: "angebot/{{dirname}}"
     meta: { path: { widget: string, label: 'Path', index_file: '_index' } }
     fields:
-      - {label: Template, name: _template, widget: hidden}
+      - {label: Template, name: template, widget: hidden}
       - {label: Titel, name: title, widget: string}
       - {label: Farbe, name: titlecolor, widget: color}
       - {label: Gewichtung, name: weight, widget: number}
       - {label: Kosten, name: costs, widget: markdown, required: false}
-      - {label: Bereitschaftsdienst, name: on_call_costs, widget: markdown, required: false}
+      - {label: Bereitschaftsdienst, name: "on_call_costs", widget: markdown, required: false}
       - {label: Ort, name: location, widget: markdown, required: false}
       - {label: Einsatzgebiet, name: location_area, widget: markdown, required: false}
       - {label: Sprache, name: language, widget: markdown, required: false}
@@ -35,18 +35,18 @@ collections:
     label_singular: Angebotskategorie
     name: "offer-categories"
     folder: "site/content/angebot"
-    filter: {field: "_template", value: "angebotskategorie"}
+    filter: {field: template, value: angebotskategorie}
     nested:
       depth: 10
     meta: { path: { widget: string, label: 'Path', index_file: '_index' } }
     fields:
-      - {label: Template, name: _template, widget: hidden}
+      - {label: Template, name: template, widget: hidden}
       - {label: Titel, name: title, widget: string}
       - {label: Gewichtung, name: weight, widget: number}
-      - {label: "Bild (Menu)", name: image_menu, widget: image}
-      - {label: Bild, name: image_category, widget: image}
-      - {label: Bild (Mobile), name: image_category_mobile, widget: image}
-      - {label: Bild (Anfrage), name: image_contact, widget: image}
+      - {label: "Bild (Menu)", name: "image_menu", widget: image}
+      - {label: Bild, name: "image_category", widget: image}
+      - {label: "Bild (Mobile)", name: "image_category_mobile", widget: image}
+      - {label: "Bild (Anfrage)", name: "image_contact", widget: image}
   - label: Teammitglieder
     label_singular: Teammitglied
     name: "team-members"
