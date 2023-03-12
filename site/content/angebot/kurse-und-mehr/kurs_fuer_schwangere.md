@@ -1,15 +1,16 @@
 ---
-title: Yoga in der Schwangerschaft
-weight: 1
-costs: ''
-location: Schulgasse 3, 8400 Winterthur
-on_call_costs: ''
-language: ''
-titlecolor: "#5C8288"
-duration: ''
-timing: Jeden Dienstag, 18.30 Uhr - 19:45 Uhr
-location_area: ''
 template: angebot
+category: Kurse & mehr
+title: Yoga in der Schwangerschaft
+titlecolor: "#5C8288"
+weight: 1
+costs: ""
+on_call_costs: ""
+location: Schulgasse 3, 8400 Winterthur
+location_area: ""
+language: ""
+duration: ""
+timing: Jeden Dienstag, 18.30 Uhr - 19:45 Uhr
 ---
 Im Yoga für Schwangere kombinieren wir sanfte Bewegung, bewusste Atmung, Körperwahrnehmung und Meditation, damit du und dein Baby gestärkt und mit Vertrauen durch die Schwangerschaft und in die Geburt gehen könnt.
 
