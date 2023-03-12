@@ -8,13 +8,16 @@ editor:
   preview: false
 format: frontmatter
 collections:
-  - label: "Angebote"
-    name: "offers"
+  - label: Angebote
+    label_singular: Angebot
+    name: offers
     folder: "site/content/angebot"
     filter: {field: "_template", value: "angebot"}
     create: true
     nested:
-      depth: 2
+      depth: 10
+    preview_path: "angebot/{{dirname}}"
+    meta: { path: { widget: string, label: 'Path', index_file: '_index' } }
     fields:
       - {label: Template, name: _template, widget: hidden}
       - {label: Titel, name: title, widget: string}
@@ -28,13 +31,14 @@ collections:
       - {label: Dauer, name: duration, widget: markdown, required: false}
       - {label: Zeitpunkt, name: timing, widget: markdown, required: false}
       - {label: Content, name: body, widget: markdown}
-  - label: "Angebotskategorien"
+  - label: Angebotskategorien
+    label_singular: Angebotskategorie
     name: "offer-categories"
     folder: "site/content/angebot"
     filter: {field: "_template", value: "angebotskategorie"}
-    create: true
     nested:
-      depth: 3
+      depth: 10
+    meta: { path: { widget: string, label: 'Path', index_file: '_index' } }
     fields:
       - {label: Template, name: _template, widget: hidden}
       - {label: Titel, name: title, widget: string}
@@ -43,7 +47,8 @@ collections:
       - {label: Bild, name: image_category, widget: image}
       - {label: Bild (Mobile), name: image_category_mobile, widget: image}
       - {label: Bild (Anfrage), name: image_contact, widget: image}
-  - label: "Teammitglieder"
+  - label: Teammitglieder
+    label_singular: Teammitglied
     name: "team-members"
     folder: "site/content/team/members"
     create: true
