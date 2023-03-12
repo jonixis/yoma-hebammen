@@ -12,14 +12,14 @@ collections:
     label_singular: Angebot
     name: offers
     folder: "site/content/angebot"
-    filter: {field: template, value: angebot}
     create: true
     nested:
-      depth: 10
+      depth: 3
+      summary: '{{category}}'
     preview_path: "angebot/{{dirname}}"
-    meta: { path: { widget: string, label: 'Path', index_file: '_index' } }
     fields:
-      - {label: Template, name: template, widget: hidden}
+      - {label: Template, name: template, widget: hidden, default: angebot}
+      - {label: Kategorie, name: category, widget: relation, collection: "offer-categories", value_field: title, search_fields: ["title"]}
       - {label: Titel, name: title, widget: string}
       - {label: Farbe, name: titlecolor, widget: color}
       - {label: Gewichtung, name: weight, widget: number}
@@ -40,7 +40,7 @@ collections:
       depth: 10
     meta: { path: { widget: string, label: 'Path', index_file: '_index' } }
     fields:
-      - {label: Template, name: template, widget: hidden}
+      - {label: Template, name: template, widget: hidden, default: angebotskategorie}
       - {label: Titel, name: title, widget: string}
       - {label: Gewichtung, name: weight, widget: number}
       - {label: "Bild (Menu)", name: "image_menu", widget: image}
