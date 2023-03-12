@@ -12,6 +12,7 @@ collections:
     label_singular: Angebot
     name: offers
     folder: "site/content/angebot"
+    filter: {field: template, value: angebot}
     create: true
     nested:
       depth: 3
@@ -37,8 +38,7 @@ collections:
     folder: "site/content/angebot"
     filter: {field: template, value: angebotskategorie}
     nested:
-      depth: 10
-    meta: { path: { widget: string, label: 'Path', index_file: '_index' } }
+      depth: 3
     fields:
       - {label: Template, name: template, widget: hidden, default: angebotskategorie}
       - {label: Titel, name: title, widget: string}
