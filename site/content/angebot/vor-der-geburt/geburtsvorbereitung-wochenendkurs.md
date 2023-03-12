@@ -17,7 +17,7 @@ timing: |-
 title: Geburtsvorbereitung Wochenendkurs
 titlecolor: '#AEBBC1'
 weight: 3
-_template: angebot
+template: angebot
 ---
 
 An unserem Wochenendkurs bringen wir dir und deiner Begleitperson unten stehende Themen näher, sodass du entspannt in deine Geburt gehen kannst. Der optimale Zeitpunkt für diesen Kurs ist ca. 28.-34. Schwangerschaftswoche und wir sind eine kleine Gruppe von max. 4 Paaren. Der Hauptfokus des Kurses liegt bei der Spontangeburt:

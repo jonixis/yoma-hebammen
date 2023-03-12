@@ -12,7 +12,7 @@ collections:
     label_singular: Angebot
     name: offers
     folder: "site/content/angebot"
-    filter: {field: "_template", value: "angebot"}
+    filter: {field: template, value: angebot}
     create: true
     nested:
       depth: 10
